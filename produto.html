@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+	  <head>
+	    
+	  	<!-- META TAGS --> 
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <!-- CSS --> 
+		<link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="produto.css">
+		<!-- Normalize CSS-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+	    <!-- Font awesome --> 
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+	    
+	    
+
+	    <title>Projeto Estágio Betalabs - Home</title>
+
+	  </head>
+
+      <body>
+
+		<!-- Inicio do Header -->
+        <header id="header">
+			<div id="caixaHeader">
+				<!-- Início do menu secundario com barra de pesquisa e links de ajuda -->
+				<div id="menuSecundario"> 
+					<div id="botoesMenuSecundario">
+						<a href="index.html">Home<span><i class="fas fa-home"></i></span></a>
+						<a href="">Fale Conosco<span><i class="fas fa-headset"></i></span></a>
+						<a href="">Carrinho<span><i class="fas fa-baby-carriage"></i></span></a>
+						<a href="">Minha Conta<span><i class="fas fa-baby"></i></span></a>
+					</div>
+					
+					<div id="divPesquisa">
+						<input type="text">
+						<span><button type="submit"><i class="fas fa-search fa-lg"></i></button></span>
+						<button onclick=handleclick() type="button" id="botaoMobile"><p>Categorias</p></button>
+					</div>
+				</div>
+				<!-- Fim do menu secundario com barra de pesquisa e links de ajuda -->
+				
+				<!-- Início do menu categorias-->
+				<nav id="nav">
+					<a href="categoria.html?categoria=todas-as-categorias">
+						<div class="zoom">
+							<img src="fotos/fotosCategorias/todasCategorias.png">
+						</div>
+						<p>TODAS AS CATEGORIAS</p>
+					</a>
+					<a href="categoria.html?categoria=calçados">
+						<div class="zoom">
+							<img src="fotos/fotosCategorias/calcados.png">
+						</div>
+						<p>CALÇADOS</p>
+					</a>
+					<a href="categoria.html?categoria=meninas">
+						<div class="zoom">
+							<img src="fotos/fotosCategorias/meninas.png">
+						</div>
+						<p>MENINAS</p>
+					</a>
+					<a href="categoria.html?categoria=meninos">
+						<div class="zoom">
+							<img src="fotos/fotosCategorias/meninos.png">
+						</div>
+						<p>MENINOS</p>
+					</a>
+					<a href="categoria.html?categoria=acessorios">
+						<div class="zoom">
+							<img src="fotos/fotosCategorias/acessorios.png">
+						</div>
+						<p>ACESSÓRIOS</p>
+					</a>
+			  </nav>
+			  <!-- Fim do menu categorias-->
+			</div>
+		</header>
+		<!-- Fim do Header -->
+
+        <!-- Inicio section Produto -->
+
+        <section id="sectionProdutoFinal">
+                <div id="produtoDetalhado">
+                    <div id="imagemDetalhada">
+                        <img src="fotos/fotosProdutos/short-azul.jpg">
+                    </div>
+                        <select>
+                           <option selected disabled>Selecione o tamanho:</option>
+                           <option value="pp"><p>PP</p></option>
+                           <option value="p">P</option>
+                           <option value="m">M</option>
+                           <option value="g">G</option>
+                        </select>
+                        <h1>Short-Azul</h1>
+                                <h2>Preço: R$ 200,00</h2>
+                                <h3>Descrição:</h3>
+                                <p>aufhiaufhauifhasf</p>
+                                <button type="button" id="addCarrinho">ADICIONAR AO CARRINHO</button>         
+                </div>
+        </section>
+		
+
+		
+		<footer id="footer">
+			<h4>Desenvolvido com ♥ por Gabriel Rodrigues</h4>
+			<div id="icons">
+			  <a href="https://www.linkedin.com/in/gabriel-rodrigues-92a17b204/"><i class="fab fa-linkedin fa-lg"></i></a>
+			  <i class="fab fa-instagram fa-lg"></i>
+			  <i class="fab fa-facebook-square fa-lg"></i>
+			</div>
+			
+
+		</footer>
+		
+
+      </body>
+      
+
+       <!-- JavaScript -->
+       <script  src="produto.js"></script>
+
+</html>
